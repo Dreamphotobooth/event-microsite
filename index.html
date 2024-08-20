@@ -6,51 +6,76 @@
     <title>Event Microsite</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .logo {
+            margin-top: 20px;
+            width: 200px;
+        }
+        .photo-container {
+            flex-grow: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #000;
-            color: #fff;
         }
-        .container {
-            text-align: center;
-            padding: 20px;
-            max-width: 600px;
-            border: 2px solid #fff;
-            border-radius: 10px;
+        .photo {
+            max-width: 100%;
+            max-height: 400px;
+            margin: 20px 0;
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        p {
+        .message {
+            margin: 20px 0;
             font-size: 1.2em;
-            margin-bottom: 30px;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #000;
-            background-color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .social-icons {
+            margin: 20px 0;
         }
-        .btn:hover {
-            background-color: #ccc;
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        .footer-logo {
+            margin-bottom: 20px;
+            width: 100px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Event Microsite</h1>
-        <p>Your photos are ready. Click the button below to download your photo.</p>
-        <a href="#" class="btn">Download Photo</a>
+    <!-- Top Logo -->
+    <img src="dream%20photo%20booth%20logo.PNG" alt="Dream Photo Booth Logo" class="logo">
+
+    <!-- Photo Container -->
+    <div class="photo-container">
+        <img src="placeholder-photo.jpg" alt="Event Photo" class="photo">
     </div>
+
+    <!-- Thank You Message and Social Media Links -->
+    <div class="message">
+        Thank you for joining Gizelle's XV<br>
+        Follow us on IG and Facebook at @dreamphotoboothrgv
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="download-icon.png" alt="Download"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+
+    <!-- Footer with Small Logo -->
+    <img src="dream%20photo%20booth%20logo.PNG" alt="Dream Photo Booth Logo" class="footer-logo">
 </body>
 </html>
