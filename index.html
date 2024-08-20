@@ -3,79 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Microsite</title>
+    <title>Gizelle's XV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
             text-align: center;
         }
-        .logo {
-            margin-top: 20px;
-            width: 200px;
-        }
-        .photo-container {
-            flex-grow: 1;
+        .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
         }
-        .photo {
-            max-width: 100%;
-            max-height: 400px;
-            margin: 20px 0;
-        }
-        .message {
-            margin: 20px 0;
-            font-size: 1.2em;
-        }
-        .social-icons {
-            margin: 20px 0;
-        }
-        .social-icons img {
-            width: 40px;
-            margin: 0 10px;
-            transition: transform 0.3s;
-        }
-        .social-icons img:hover {
-            transform: scale(1.1);
-        }
-        .footer-logo {
+        .image-container {
+            max-width: 70%;
             margin-bottom: 20px;
-            width: 100px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .social-links {
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <!-- Top Logo -->
-    <img src="dream%20photo%20booth%20logo.PNG" alt="Dream Photo Booth Logo" class="logo">
-
-    <!-- Photo Container -->
-    <div class="photo-container">
-        <img src="placeholder-photo.jpg" alt="Event Photo" class="photo">
+    <div class="container">
+        <div class="image-container">
+            <img src="your-image-url" alt="Gizelle's XV">
+        </div>
+        <h2>Thank you for joining Gizelle's XV</h2>
+        <p>Follow us on IG and Facebook at @dreamphotoboothrgv</p>
+        <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-download"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footer">
+            Brought to you by Dream Photo Booth
+        </div>
     </div>
-
-    <!-- Thank You Message and Social Media Links -->
-    <div class="message">
-        Thank you for joining Gizelle's XV<br>
-        Follow us on IG and Facebook at @dreamphotoboothrgv
-    </div>
-    <div class="social-icons">
-        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="download-icon.png" alt="Download"></a>
-        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-    </div>
-
-    <!-- Footer with Small Logo -->
-    <img src="dream%20photo%20booth%20logo.PNG" alt="Dream Photo Booth Logo" class="footer-logo">
 </body>
 </html>
